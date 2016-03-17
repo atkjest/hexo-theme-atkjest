@@ -1,0 +1,28 @@
+<!-- views/partials/header.ejs -->
+
+<div class="avatar-link">
+	<a href="/about"><img class="avatar-big" src="<%- config.root%><%- theme.avatar%>"></a>
+</div>
+
+<% if (theme.rss){ %>
+  <a href="<%- theme.rss %>" target="_blank" title="<%= config.title %>">
+  	<button class="rss"><i class="fa fa-rss"></i>&nbsp;RSS订阅</button>
+  </a>
+<% } %>
+
+<div class="author-profile">
+	<p><%- theme.author%><br/><%- theme.profile%></p>
+	<a class="fa fa-user" href="/about">&nbsp;&nbsp;关于我</a><br/>
+	<a class="fa fa-calendar" href="/weblog">&nbsp;&nbsp;建站日志</a>
+</div>
+
+<div class="contact">
+	<a class="fa fa-github" target="_blank" href="<%- theme.social.github%>">&nbsp;&nbsp;GitHub</a><br/>
+</div>
+
+<div class="google-search">
+	<form action="//google.com/search" method="get" accept-charset="utf-8">
+		<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="搜索" />
+		<input type="hidden" name="q" value="site:<%- theme.url.replace(/^https?:\/\//, '') %>">
+	</form>
+</div>

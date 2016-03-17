@@ -1,0 +1,16 @@
+<!-- views/partials/footer.ejs -->
+<footer id="footer">
+	<!-- back to top scroll -->
+	<div id="totop" style="position:fixed;bottom:50px;right:50px;cursor: pointer;">
+		<a title="totop"><i class="fa fa-chevron-circle-up fa-4x"></i></a>
+	</div>
+
+	<i class="fa fa-cc"></i>&nbsp;Copyright&nbsp;<%= config.author || config.title %><br/> 
+	<!-- <%= theme.since%><%= date(new Date(), 'YYYY') %>-->
+	Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> And Themed by <a>hexo-theme-me</a>.
+
+	<br/>
+
+	<!-- firebase app for site stat -->
+	<font id="sum_counter">总访问量&nbsp;<font style='color:black'> </font>&nbsp;次</font>&nbsp;|&nbsp;<font id="detail_counter">本页访问量&nbsp;<font style='color:black'> </font>&nbsp;次</font>
+</footer>

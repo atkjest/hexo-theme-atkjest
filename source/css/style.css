@@ -1,0 +1,118 @@
+/*
+* @Author: atkjest | http://atkjest.me
+* @Date:   2016-03-13 21:51:35
+* @Last Modified by:   atkjest
+* @Last Modified time: 2016-03-17 17:48:28
+*/
+body {
+	color: #414243;
+  font-family: "Microsoft YaHei","WenQuanYi Micro Hei",sans-serif,"Open Sans","Helvetica Neue",Arial,"Hiragino Sans GB";
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #414243;
+  font-weight: 400;
+}
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+h6 {
+  font-size: 16px;
+}
+a {
+  color: #225d99;
+  text-decoration: none;
+  background: transparent none repeat scroll 0 0;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+img {
+  border: 0 none;
+  height: auto;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+  padding: 2px 8px;
+/*  background-color: #98FB98;
+  background-image: -moz-linear-gradient(center top , #98FB98, #7FFFD4);*/
+  background-color: #87CEFA;
+  background-image: -moz-linear-gradient(center top , #87CEFA, #00BFFF);
+  background-repeat: repeat-x;
+  border: 1px solid #1cac52;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+blockquote {
+  border-left: 5px solid #4a4a4a;
+  box-sizing: border-box;
+  margin: 10px 0 10px -15px;
+  padding: 0 0 0 10px;
+  font-style: italic;
+}
+
+/*.ng-nav-hide {
+  width: 100%;
+  height: 50px;
+}
+
+.gutter{
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.6em 0;
+  border: 1px solid #E3EDF3;
+  width: 20px;
+  padding: 10px;
+  font-size: 0.8em;
+  white-space: pre;
+  overflow: auto;
+  background: #F7FAFB;
+  border-radius: 3px;
+}
+
+.code{
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.6em 0;
+  border: 1px solid #E3EDF3;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 0.8em;
+  white-space: pre;
+  overflow: auto;
+  background: #F7FAFB;
+  border-radius: 3px;
+  word-wrap: break-word;
+}
+table {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1.6em 0;
+    width:100%;
+    max-width: 100%;
+    background-color: transparent;
+}*/

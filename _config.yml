@@ -1,0 +1,21 @@
+author: atkjest
+titlebar: 吴继超的个人博客
+profile: 嵌入式 | 信息安全
+
+avatar: favicon.jpg
+since: 2014
+
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://atkjest.me
+root: /
+
+rss: /atom.xml
+social:
+  zhihu: https://www.zhihu.com/people/jichao-wu
+  github: https://github.com/atkjest
+
+# Read More
+excerpt_link: true
+
+duoshuo_shortname: zone-atkjest
+firebase_url: https://amber-heat-3995.firebaseio.com/

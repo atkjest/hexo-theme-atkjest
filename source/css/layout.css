@@ -1,0 +1,212 @@
+/*
+* @Author: atkjest | http://atkjest.me
+* @Date:   2016-03-14 09:41:18
+* @Last Modified by:   atkjest
+* @Last Modified time: 2016-03-17 21:13:18
+*/
+
+/* header style*/
+#header-holder {
+  min-width: 1179px;
+}
+#header {
+	background-color: #fbfcfd;
+  background-image: -moz-linear-gradient(center top , #fcfdfe, #f8f9fa);
+  background-repeat: repeat-x;
+  border-bottom: 1px solid #dedddf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 0 #fff inset;
+  height: 43px;
+  line-height: 43px;
+  position: relative;
+  text-shadow: 0 1px 0 #fff;
+}
+.receptacle {
+	margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 700px;
+}
+.header-fixed-home {
+  /*z-index: 100;*/
+	left: 120px;
+	top: 5px;
+	position: fixed;
+  cursor: pointer;
+}
+.header-fixed-home a {
+  color: black;
+}
+.header-fixed-home a:hover {
+  text-decoration: none;
+}
+.header-title-bar {
+  max-width: 260px;
+  letter-spacing: 15px;
+  font-size: 18px;
+  font-weight: bolder;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #414243;
+  margin-top: 0px;
+}
+.header-description {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #A9A9A9;
+}
+.attend-zhihu {
+  float: right;
+  margin-top: 8px;
+}
+#attend-favour, #attend-favour-page{
+  float: right;
+  margin: 9px 0 0 20px;
+}
+
+
+/* post style*/
+.main-container {
+	min-height: 600px;
+	margin-top: 55px;
+}
+.main {
+	padding: 0 0 55px;
+}
+.post-title {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.post-title a{
+	color: #414243;
+  font-size: 26px;
+  font-weight: 400;
+  transition: all 0.05s ease-in-out 0s;
+}
+.article-last {
+  margin-bottom: 43px;
+}
+.pull {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.article-nav {
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+.pagination {
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
+}
+.newer-posts {
+  float: left;
+}
+.boundary {
+  color: #414243;
+}
+.boundary:hover {
+  text-decoration: none;
+}
+.float-share-first {
+  margin-left: 0px;
+  float: left;
+  display: block;
+}
+.float-share {
+  margin-left: 10px;
+  float: left;
+  display: block;
+}
+.float-share-last {
+  margin-left: 10px;
+  margin-right: 43px;
+  float: left;
+  display: block;
+}
+
+
+/* toc style*/
+.post-toc{
+  overflow:auto;
+  left: 10px;
+  top: 60px;
+  width: 260px;
+  max-height: 550px;
+  position: fixed;
+}
+.post-toc a {
+  color: #414243;
+}
+.post-toc .toc {
+  padding-left: 0px;
+}
+.post-toc .toc-child {
+  padding-left: 20px;
+}
+.post-toc p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.post-toc ol {
+  list-style:none;
+}
+
+
+/* sidebar style */
+.sidebar {
+  position: absolute;
+  right: -230px;
+  top: 0;
+  width: 170px;
+  display: block;
+}
+.avatar-big {
+	display: inline-block;
+  height: 100px;
+  margin-bottom: 25px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.avatar-small {
+  margin: 0px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.google-search {
+  margin-top: 20px;
+}
+
+
+/* code style*/
+.highlight {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.code {
+	width: 100%;
+}
+.gutter, .code ,code {
+  border: 1px solid #E3EDF3;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow: auto;
+  background: #F7FAFB;
+  border-radius: 3px;
+}
+
+
+/* footer style */
+#footer {
+	height: 100px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
