@@ -11,7 +11,8 @@
 7、font awesome => 图标字体 <br/>
 8、有字库在线云字体 => 站点标题 <br/>
 
-![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-094045_1366x768_scrot.png)
+![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152434_1366x768_scrot.png)
+![hexo-theme-bottom](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152950_1366x768_scrot.png)
 
 ### 使用
 #### 安装
