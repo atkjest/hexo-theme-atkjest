@@ -1,16 +1,19 @@
 <!-- views/partials/header.ejs -->
-<!-- <a href="<%- config.root %>"><h1 id="logo"><%= config.title %></h1></a> -->
 
 <div id="header-holder">
 	<header id="header">
+
+		<div class="header-fixed-home">
+			<a target="_self" href="<%- config.root%>">
+				<i class="fa fa-home fa-2x"></i>
+				<span>首页</span>
+			</a>
+		</div>
+
 		<div class="receptacle">
 
-			<span class="header-title-bar"><%- config.title%></span>
+			<a class="header-title-bar" href="<%- config.root%>"><%- config.title%></a>
 			<span class="header-description"><%- theme.titlebar%></span> 
-
-			<div class="header-fixed-home">
-				<a target="_self" href="<%- config.root%>"><i class="fa fa-home fa-2x"></i></a>
-			</div>
 
 			<a target="_blank" href="<%- theme.social.zhihu%>">
 				<button class="attend-zhihu">关注知乎</button>

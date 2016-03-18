@@ -2,15 +2,15 @@
 一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击[atkjest.me](http://atkjest.me)查看效果。
 
 ### 关于主题
-1、知乎专栏布局设计 => 灵感来源
-2、百度分享 => qq空间、新浪微博、微信等
-3、comment => 多说评论
-4、firebase数据统计 => 网站访问量、点赞统计
-5、Google Search站内搜索 => Google site: 站内搜索
-6、RSS订阅 => hexo-generator-feed
-7、font awesome => 图标字体
+#### 1、知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师
+#### 2、百度分享 => qq空间、新浪微博、微信等
+#### 3、comment => 多说评论
+#### 4、firebase数据统计 => 网站访问量、点赞统计
+#### 5、Google Search站内搜索 => Google site: 站内搜索
+#### 6、RSS订阅 => hexo-generator-feed
+#### 7、font awesome => 图标字体
 
-![hexo-theme-atkjest]()
+![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-094045_1366x768_scrot.png)
 
 ### 使用
 #### 安装
@@ -40,10 +40,11 @@ rss: /atom.xml
 social:
   zhihu: https://www.zhihu.com/people/jichao-wu
   github: https://github.com/atkjest
-  
+
 # Read More
 excerpt_link: true
 
 duoshuo_shortname: zone-atkjest
-firebase_url: https://amber-heat-3995.firebaseio.com/
+# firebase_url: 请自行修改`source/js/`目录下的favour.js和webstats.js文件
+# 将theme.firebase_url的地址修改为自己的firebase App地址
 ```

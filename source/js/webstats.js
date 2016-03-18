@@ -2,10 +2,11 @@
 * @Author: atkjest | http://atkjest.me
 * @Date:   2016-03-13 12:20:00
 * @Last Modified by:   atkjest
-* @Last Modified time: 2016-03-17 21:30:30
+* @Last Modified time: 2016-03-18 09:08:24
 */
 
-var myDataRef = new Firebase('<%- theme.firebase_url%>');
+// theme.firebase_url
+var myDataRef = new Firebase('https://amber-heat-3995.firebaseio.com/');
 
 // 明细由当前页面的url表示，将反斜线替换成下划线，并将中文decode出来
 var current_url = decodeURI(window.location.pathname.replace(new RegExp('\\/|\\.', 'g'),"_"));

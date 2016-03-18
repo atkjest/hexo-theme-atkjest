@@ -1,4 +1,30 @@
 <!-- views/pages/archive.ejs -->
 <!-- 归档页 -->
 
-This is archive .
+<div class="body-holder">
+  <div class="main-container">
+    <div class="receptacle main">
+			<div class="article">
+			  <% site.posts.sort("date", "desc").each(function(post){ %>
+			    <div class="title">
+			      <h1 class="post-title"><a data-pjax href="<%- config.root %><%- post.path %>"><%- post.title %></a>
+			      </h1>
+			    </div>
+
+			    <div class="tag article-last">
+			      <% if (post.tags && post.tags.length){ %>
+			      <% post.tags.each(function(tag) { %>
+			      <i class="fa fa-tags"></i>
+			      <a data-pjax href='<%= config.root + tag.path %>'><%= tag.name %></a>
+			      <% }); %>
+			      <% } %>
+			    </div> 
+			  <% }) %> 
+			</div>
+
+      <aside class="sidebar">
+        <%- partial('_partial/sidebar') %>
+      </aside>
+    </div>
+  </div>
+</div>

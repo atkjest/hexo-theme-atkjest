@@ -4,76 +4,78 @@
 
 <!-- archive.ejs是归档页面，category.ejs是分类页面，post.ejs是文章内容页面，tag.ejs是文章标签页面 -->
 
-<div class="main-container">
-  <div class="receptacle main">
-    <div class="article">
-      <% page.posts.sort("date", "desc").each(function(post){ %>
+<div class="body-holder">
+  <div class="main-container">
+    <div class="receptacle main">
+      <div class="article">
+        <% page.posts.sort("date", "desc").each(function(post){ %>
 
-        <div class="title">
-          <h1 class="post-title"><a data-pjax href="<%- config.root %><%- post.path %>"><%- post.title %></a>
-          </h1>
-        </div>
+          <div class="title">
+            <h1 class="post-title"><a data-pjax href="<%- config.root %><%- post.path %>"><%- post.title %></a>
+            </h1>
+          </div>
 
-        <div class="tag">
-          <% if (post.tags && post.tags.length){ %>
-          <% post.tags.each(function(tag) { %>
-          <i class="fa fa-tags"></i>
-          <a data-pjax href='<%= config.root + tag.path %>'><%= tag.name %></a>
-          <% }); %>
-          <% } %>
-        </div> 
+          <div class="tag">
+            <% if (post.tags && post.tags.length){ %>
+            <% post.tags.each(function(tag) { %>
+            <i class="fa fa-tags"></i>
+            <a data-pjax href='<%= config.root + tag.path %>'><%= tag.name %></a>
+            <% }); %>
+            <% } %>
+          </div> 
 
-        <div class="meta">
-          <a href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
-          
-          <span class="bull">·</span>
-          
-          <a class="author" href="<%- config.root%>" target="_blank"><%- theme.author%></a>
+          <div class="meta">
+            <a href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
+            
+            <span class="bull">·</span>
+            
+            <a class="author" href="<%- config.root%>" target="_blank"><%- theme.author%></a>
 
-          <span class="bull">·</span>
+            <span class="bull">·</span>
 
-          <!-- 发表于 -->
-          <time datetime="<%= date_xml(post.date) %>"
-                itemprop="datePublished"><%= date(post.date, null) %></time>
+            <!-- 发表于 -->
+            <time datetime="<%= date_xml(post.date) %>"
+                  itemprop="datePublished"><%= date(post.date, null) %></time>
 
-        </div>
+          </div>
 
-        <div class="summary article-last">
-          <p>
-              <% if (post.excerpt){ %>
-              <%- post.excerpt %>
-              <% } else { %>
-              <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 500) %>
-              <% } %>
-          </p>
-          <% if (theme.excerpt_link) { %>
-          <p>
-              <a data-pjax href="<%- config.root %><%- post.path %>"
-                 class="excerpt-link">继续阅读...</a>
-          </p>
-          <% } %>
-        </div>
-      <% }) %> 
+          <div class="summary article-last">
+            <p>
+                <% if (post.excerpt){ %>
+                <%- post.excerpt %>
+                <% } else { %>
+                <%- post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 500) %>
+                <% } %>
+            </p>
+            <% if (theme.excerpt_link) { %>
+            <p>
+                <a data-pjax href="<%- config.root %><%- post.path %>"
+                   class="excerpt-link">继续阅读...</a>
+            </p>
+            <% } %>
+          </div>
+        <% }) %> 
+      </div>
+
+      <div class="article-nav">
+        <nav class="pagination" role="pagination">
+            <% if (page.prev) { %>
+            <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev_link %>">← 上一页</a>
+            <% } else { %>
+            <a class="newer-posts boundary" href="#">前面是坑</a>
+            <% } %>
+            <!--<span class="page-number">Page <%- page.current %> of <%- page.total %></span>-->
+            <% if (page.next) { %>
+            <a data-pjax class="older-posts" href="<%- config.root %><%- page.next_link %>">下一页 →</a>
+            <% } else { %> 
+            <a class="older-posts boundary" href="#">后面是坑</a>
+            <% } %>
+        </nav>
+      </div>
+
+      <aside class="sidebar">
+        <%- partial('_partial/sidebar') %>
+      </aside>
     </div>
-
-    <div class="article-nav">
-      <nav class="pagination" role="pagination">
-          <% if (page.prev) { %>
-          <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev_link %>">← 上一页</a>
-          <% } else { %>
-          <a class="newer-posts boundary" href="#">前面是坑</a>
-          <% } %>
-          <!--<span class="page-number">Page <%- page.current %> of <%- page.total %></span>-->
-          <% if (page.next) { %>
-          <a data-pjax class="older-posts" href="<%- config.root %><%- page.next_link %>">下一页 →</a>
-          <% } else { %> 
-          <a class="older-posts boundary" href="#">后面是坑</a>
-          <% } %>
-      </nav>
-    </div>
-
-    <aside class="sidebar">
-      <%- partial('_partial/sidebar') %>
-    </aside>
   </div>
 </div>

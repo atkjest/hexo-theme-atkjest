@@ -18,4 +18,5 @@ social:
 excerpt_link: true
 
 duoshuo_shortname: zone-atkjest
-firebase_url: https://amber-heat-3995.firebaseio.com/
+# firebase_url: 请自行修改`source/js/`目录下的favour.js和webstats.js文件
+# 将theme.firebase_url的地址修改为自己的firebase App地址

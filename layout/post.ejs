@@ -1,79 +1,85 @@
-<div class="main-container">
-  <div class="receptacle main">
-    <div class="article">
-      <div class="tag">
-        <% if (page.tags && page.tags.length){ %>
-          <% page.tags.each(function(tag) { %>
-          <i class="fa fa-tags"></i>
-          <a data-pjax href='<%= config.root + tag.path %>'><%= tag.name %></a>
-          <% }); %>
+<!-- views/pages/index.ejs -->
+<!-- body in layout -->
+<!-- 文章 -->
+
+<div class="body-holder">
+  <div class="main-container">
+    <div class="receptacle main">
+      <div class="article">
+        <div class="tag">
+          <% if (page.tags && page.tags.length){ %>
+            <% page.tags.each(function(tag) { %>
+            <i class="fa fa-tags"></i>
+            <a data-pjax href='<%= config.root + tag.path %>'><%= tag.name %></a>
+            <% }); %>
+          <% } %>
+        </div>
+        
+        <% if (page.prev || page.next) {%>
+          <a target="_self" href="">
+            <button id="attend-favour-page"><i class="fa fa-thumbs-up"></i>&nbsp;|&nbsp;赞</button>
+          </a>
+        <% } else {%>
+          <a target="_self" href="">
+            <button id="attend-favour"><i class="fa fa-thumbs-up"></i>&nbsp;|&nbsp;赞</button>
+          </a>
         <% } %>
+
+        <div class="title">
+          <h1 class="post-title"><%- page.title %></h1>
+        </div>
+
+        <div class="meta">
+          <a class="float-share-first" href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
+          <span class="bull float-share">·</span>
+          <a class="author float-share" href="<%- config.root%>" target="_blank"><%- theme.author%></a>
+          <span class="bull float-share">·</span>
+          <!-- 发表于 -->
+          <time class="float-share float-share-last" datetime="<%= date_xml(page.date) %>"
+                itemprop="datePublished"><%= date(page.date, null) %></time>
+          
+          <!-- baidu share -->
+          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone">QQ空间</a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina">新浪微博</a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin">微信</a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq">腾讯微博</a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren">人人网</a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+        </div>
+       
+        <% if(page.toc && page.toc !== false){ %>
+          <div class="post-toc">
+            <p>文章目录</p>
+            <%- toc(page.content) %> 
+          </div>       
+        <%}%>
+        
+        <div class="article-last">
+          <%- page.content%>
+        </div>
       </div>
-      
+
       <% if (page.prev || page.next) {%>
-        <a target="_self" href="">
-          <button id="attend-favour-page"><i class="fa fa-thumbs-up"></i>&nbsp;|&nbsp;赞</button>
-        </a>
-      <% } else {%>
-        <a target="_self" href="">
-          <button id="attend-favour"><i class="fa fa-thumbs-up"></i>&nbsp;|&nbsp;赞</button>
-        </a>
+        <div class="article-nav">
+          <nav class="pagination" role="pagination">
+            <% if (page.prev) { %>
+            <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev_link %>">← 上一篇</a>
+            <% } else { %>
+            <a class="newer-posts boundary" href="#">前面是坑</a>
+            <% } %>
+            <!--<span class="page-number">Page <%- page.current %> of <%- page.total %></span>-->
+            <% if (page.next) { %>
+            <a data-pjax class="older-posts" href="<%- config.root %><%- page.next_link %>">下一篇 →</a>
+            <% } else { %> 
+            <a class="older-posts boundary" href="#">后面是坑</a>
+            <% } %>
+          </nav>
+        </div>
       <% } %>
 
-      <div class="title">
-        <h1 class="post-title"><%- page.title %></h1>
-      </div>
+      <aside class="sidebar">
+        <%- partial('_partial/sidebar') %>
+      </aside>
 
-      <div class="meta">
-        <a class="float-share-first" href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
-        <span class="bull float-share">·</span>
-        <a class="author float-share" href="<%- config.root%>" target="_blank"><%- theme.author%></a>
-        <span class="bull float-share">·</span>
-        <!-- 发表于 -->
-        <time class="float-share float-share-last" datetime="<%= date_xml(page.date) %>"
-              itemprop="datePublished"><%= date(page.date, null) %></time>
-        
-        <!-- baidu share -->
-        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone">QQ空间</a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina">新浪微博</a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin">微信</a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq">腾讯微博</a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren">人人网</a></div>
-        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-      </div>
-     
-      <% if(page.toc && page.toc !== false){ %>
-        <div class="post-toc">
-          <p>文章目录</p>
-          <%- toc(page.content) %> 
-        </div>       
-      <%}%>
-      
-      <div class="article-last">
-        <%- page.content%>
-      </div>
+      <!-- duoshuo comment -->
+      <%- partial('_partial/comment') %>
     </div>
-
-    <% if (page.prev || page.next) {%>
-      <div class="article-nav">
-        <nav class="pagination" role="pagination">
-          <% if (page.prev) { %>
-          <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev_link %>">← 上一篇</a>
-          <% } else { %>
-          <a class="newer-posts boundary" href="#">前面是坑</a>
-          <% } %>
-          <!--<span class="page-number">Page <%- page.current %> of <%- page.total %></span>-->
-          <% if (page.next) { %>
-          <a data-pjax class="older-posts" href="<%- config.root %><%- page.next_link %>">下一篇 →</a>
-          <% } else { %> 
-          <a class="older-posts boundary" href="#">后面是坑</a>
-          <% } %>
-        </nav>
-      </div>
-    <% } %>
-
-    <aside class="sidebar">
-      <%- partial('_partial/sidebar') %>
-    </aside>
-
-    <!-- duoshuo comment -->
-    <%- partial('_partial/comment') %>
   </div>
 </div>
