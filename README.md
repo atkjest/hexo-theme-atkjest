@@ -9,6 +9,7 @@
 5、Google Search站内搜索 => Google site: 站内搜索 <br/>
 6、RSS订阅 => hexo-generator-feed <br/>
 7、font awesome => 图标字体 <br/>
+8、有字库在线云字体 => 站点标题 <br/>
 
 ![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-094045_1366x768_scrot.png)
 

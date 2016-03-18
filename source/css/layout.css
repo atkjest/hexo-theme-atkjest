@@ -2,7 +2,7 @@
 * @Author: atkjest | http://atkjest.me
 * @Date:   2016-03-14 09:41:18
 * @Last Modified by:   atkjest
-* @Last Modified time: 2016-03-18 09:35:13
+* @Last Modified time: 2016-03-18 14:52:05
 */
 
 /* holder style */
@@ -50,9 +50,10 @@
   text-decoration: none;
 }
 .header-title-bar {
+  font-family:'chenwixun-jian22da2fb1a5008';
   max-width: 260px;
   letter-spacing: 15px;
-  font-size: 18px;
+  font-size: 35px;
   font-weight: bolder;
   overflow: hidden;
   text-overflow: ellipsis;
