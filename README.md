@@ -1,5 +1,5 @@
-### hexo-theme-atkjest
-一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击&nbsp;[atkjest.me](http://atkjest.me)&nbsp;查看效果。
+## hexo-theme-atkjest
+一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击&nbsp;[hexo-theme-atkjest](http://atkjest.me/2016/03/18/2016/hexo-theme-atkjest%E4%B8%8A%E7%BA%BF/)&nbsp;查看效果。
 
 ### 关于主题
 1、知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师 <br/>
