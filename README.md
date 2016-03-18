@@ -1,14 +1,14 @@
 ### hexo-theme-atkjest
-一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击[atkjest.me](http://atkjest.me)查看效果。
+一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击&nbsp;[atkjest.me](http://atkjest.me)&nbsp;查看效果。
 
 ### 关于主题
-#### 1、知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师
-#### 2、百度分享 => qq空间、新浪微博、微信等
-#### 3、comment => 多说评论
-#### 4、firebase数据统计 => 网站访问量、点赞统计
-#### 5、Google Search站内搜索 => Google site: 站内搜索
-#### 6、RSS订阅 => hexo-generator-feed
-#### 7、font awesome => 图标字体
+1、知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师 <br/>
+2、百度分享 => qq空间、新浪微博、微信等 <br/>
+3、comment => 多说评论 <br/>
+4、firebase数据统计 => 网站访问量、点赞统计 <br/>
+5、Google Search站内搜索 => Google site: 站内搜索 <br/>
+6、RSS订阅 => hexo-generator-feed <br/>
+7、font awesome => 图标字体 <br/>
 
 ![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-094045_1366x768_scrot.png)
 
@@ -16,11 +16,11 @@
 #### 安装
 `$ git clone https://github.com/atkjest/hexo-theme-atkjest.git themes/atkjest`
 #### 配置
-修改hexo根目录下的 _config.yml
+修改hexo根目录下的 _config.yml <br/>
 `theme: atkjest`
 #### 更新
-cd themes/atkjest
-git pull
+`cd themes/atkjest` <br/>
+`git pull`
 
 ### 主题配置
 配置文件在主题根目录下的_config.yml
