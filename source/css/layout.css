@@ -2,7 +2,7 @@
 * @Author: atkjest | http://atkjest.me
 * @Date:   2016-03-14 09:41:18
 * @Last Modified by:   atkjest
-* @Last Modified time: 2016-03-18 14:52:05
+* @Last Modified time: 2016-03-21 10:47:40
 */
 
 /* holder style */
@@ -147,7 +147,7 @@
 .post-toc{
   overflow:auto;
   left: 10px;
-  top: 60px;
+  top: 100px;
   width: 260px;
   max-height: 550px;
   position: fixed;
@@ -159,7 +159,7 @@
   padding-left: 0px;
 }
 .post-toc .toc-child {
-  padding-left: 20px;
+  padding-left: 13px;
 }
 .post-toc p {
   margin-top: 0px;
@@ -185,6 +185,19 @@
   width: 100px;
   border-radius: 50%;
   border: 1px solid #ddd;
+
+  -moz-transition: all 1s ease-in-out; 
+  -webkit-transition: all 1s ease-in-out; 
+  -o-transition: all 1s ease-in-out; 
+  -ms-transition: all 1s ease-in-out; 
+  transition: all 1s ease-in-out; 
+}
+.avatar-big:hover {
+  transform:rotate(360deg);
+  -ms-transform:rotate(360deg);   /* IE 9 */
+  -moz-transform:rotate(360deg);  /* Firefox */
+  -webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+  -o-transform:rotate(360deg);  /* Opera */
 }
 .avatar-small {
   margin: 0px;
@@ -195,6 +208,15 @@
 }
 .google-search {
   margin-top: 20px;
+}
+#search {
+  border-radius: 10px;
+  width: 170px;
+  height: 25px;
+  border: 1px solid #ddd;
+}
+.weibo-show {
+ margin-top: 43px;
 }
 
 

@@ -10,6 +10,7 @@
 6、RSS订阅 => hexo-generator-feed <br/>
 7、font awesome => 图标字体 <br/>
 8、有字库在线云字体 => 站点标题 <br/>
+9、多说社会化评论框核心脚本`embed.js`本地化 => 加载速度更快
 
 ![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152434_1366x768_scrot.png)
 ![hexo-theme-bottom](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152950_1366x768_scrot.png)
@@ -49,4 +50,7 @@ excerpt_link: true
 duoshuo_shortname: zone-atkjest
 # firebase_url: 请自行修改`source/js/`目录下的favour.js和webstats.js文件
 # 将theme.firebase_url的地址修改为自己的firebase App地址
+
+# 多说站长回复请修改`source/lib/js/`目录下的embed.js文件
+# 将`e.user_id == 6255593621878211329` 修改为自己的多说id
 ```

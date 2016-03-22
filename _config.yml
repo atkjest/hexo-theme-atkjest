@@ -20,3 +20,9 @@ excerpt_link: true
 duoshuo_shortname: zone-atkjest
 # firebase_url: 请自行修改`source/js/`目录下的favour.js和webstats.js文件
 # 将theme.firebase_url的地址修改为自己的firebase App地址
+
+
+# <meta name="google-site-verification" content="0Hy8JbZfB-YIzE3JroCVmlsXWgUNqLuQQMPzD1KXqSc" />
+# <meta name="baidu-site-verification" content="kVDpn43gUF" />
+google_analytics: 0Hy8JbZfB-YIzE3JroCVmlsXWgUNqLuQQMPzD1KXqSc
+baidu_analytics: kVDpn43gUF

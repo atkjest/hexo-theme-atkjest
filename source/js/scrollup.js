@@ -2,13 +2,13 @@
 * @Author: atkjest | http://atkjest.me
 * @Date:   2016-03-13 14:36:23
 * @Last Modified by:   atkjest
-* @Last Modified time: 2016-03-14 10:37:17
+* @Last Modified time: 2016-03-19 13:14:25
 */
 
 (function($) { 
 	// When to show the scroll link
 	// higher number = scroll link appears further down the page   
-	var upperLimit = 1000;
+	var upperLimit = 430;
 	
 	// Our scroll link element
 	var scrollElem = $('#totop');

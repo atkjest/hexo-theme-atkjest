@@ -13,11 +13,9 @@
 <div class="author-profile">
 	<p><%- theme.author%><br/><%- theme.profile%></p>
 	<a class="fa fa-user" href="/about">&nbsp;&nbsp;关于我</a><br/>
-	<a class="fa fa-calendar" href="/weblog">&nbsp;&nbsp;建站日志</a>
-</div>
-
-<div class="contact">
 	<a class="fa fa-github" target="_blank" href="<%- theme.social.github%>">&nbsp;&nbsp;GitHub</a><br/>
+	<a class="fa fa-calendar" href="/weblog">&nbsp;&nbsp;建站日志</a><br/>
+	<a class="fa fa-book" href="/bookreview">&nbsp;&nbsp;我的书评</a>
 </div>
 
 <div class="google-search">
@@ -25,4 +23,9 @@
 		<input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="搜索" />
 		<input type="hidden" name="q" value="site:<%- theme.url.replace(/^https?:\/\//, '') %>">
 	</form>
+</div>
+
+<div class="weibo-show">
+	<a href="http://weibo.com/u/5785535560?s=6uyXnP" target="_blank">我的微博</a>
+	<a href="http://weibo.com/u/5785535560?s=6uyXnP" target="_blank"><img border="0" src="http://service.t.sina.com.cn/widget/qmd/5785535560/379b87c3/4.png"/></a>
 </div>
