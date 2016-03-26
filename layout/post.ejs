@@ -5,7 +5,7 @@
 <div class="body-holder">
   <div class="main-container">
     <div class="receptacle main">
-      <div class="article">
+      <div class="post-article">
         <div class="tag">
           <% if (page.tags && page.tags.length){ %>
             <% page.tags.each(function(tag) { %>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="meta">
-          <a class="float-share-first" href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
+          <a class="float-share-first" href="<%- config.root%>"><img class="avatar-small" src="<%- theme.avatar%>"></a>
           <span class="bull float-share">·</span>
           <a class="author float-share" href="<%- config.root%>" target="_blank"><%- theme.author%></a>
           <span class="bull float-share">·</span>
@@ -43,7 +43,9 @@
           <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
         </div>
-       
+      </div>
+
+      <div class="article-content">
         <% if(page.toc && page.toc !== false){ %>
           <div class="post-toc">
             <p>文章目录</p>
@@ -60,13 +62,13 @@
         <div class="article-nav">
           <nav class="pagination" role="pagination">
             <% if (page.prev) { %>
-            <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev_link %>">← 上一篇</a>
+            <a data-pjax class="newer-posts" href="<%- config.root %><%- page.prev.path %>">← 上一篇</a>
             <% } else { %>
             <a class="newer-posts boundary" href="#">前面是坑</a>
             <% } %>
             <!--<span class="page-number">Page <%- page.current %> of <%- page.total %></span>-->
             <% if (page.next) { %>
-            <a data-pjax class="older-posts" href="<%- config.root %><%- page.next_link %>">下一篇 →</a>
+            <a data-pjax class="older-posts" href="<%- config.root %><%- page.next.path %>">下一篇 →</a>
             <% } else { %> 
             <a class="older-posts boundary" href="#">后面是坑</a>
             <% } %>

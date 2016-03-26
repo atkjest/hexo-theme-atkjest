@@ -5,7 +5,7 @@
 function sskadmin(e) {
 	var ssk = '';
 	if(e.user_id == 6255593621878211329){
-		ssk = '<div style="position: absolute;right:47px;bottom:18px;"><img src="/css/img/sskadmin.png" style="width:100px; height:50px; "></div>'
+		ssk = '<div style="position: absolute;right:47px;bottom:13px;filter:alpha(opacity=20);  -moz-opacity:0.2;  -khtml-opacity: 0.2;  opacity: 0.2;"><img src="/css/img/sskadmin.png" style="width:100px; height:50px; "></div>'
 	}
 	return ssk;
 }

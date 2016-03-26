@@ -10,11 +10,7 @@
       <div class="article">
         <% page.posts.sort("date", "desc").each(function(post){ %>
 
-          <div class="title">
-            <h1 class="post-title"><a data-pjax href="<%- config.root %><%- post.path %>"><%- post.title %></a>
-            </h1>
-          </div>
-
+          <!--
           <div class="tag">
             <% if (post.tags && post.tags.length){ %>
             <% post.tags.each(function(tag) { %>
@@ -23,9 +19,15 @@
             <% }); %>
             <% } %>
           </div> 
+          -->
+
+          <div class="title">
+            <h1 class="post-title"><a data-pjax href="<%- config.root %><%- post.path %>"><%- post.title %></a>
+            </h1>
+          </div>
 
           <div class="meta">
-            <a href="<%- config.root%>"><img class="avatar-small" src="<%- config.root%><%- theme.avatar%>"></a>
+            <a href="<%- config.root%>"><img class="avatar-small" src="<%- theme.avatar%>"></a>
             
             <span class="bull">·</span>
             

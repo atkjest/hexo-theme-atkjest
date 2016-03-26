@@ -2,7 +2,7 @@
 * @Author: atkjest | http://atkjest.me
 * @Date:   2016-03-14 09:41:18
 * @Last Modified by:   atkjest
-* @Last Modified time: 2016-03-21 10:47:40
+* @Last Modified time: 2016-03-26 10:16:25
 */
 
 /* holder style */
@@ -98,6 +98,13 @@
   font-weight: 400;
   transition: all 0.05s ease-in-out 0s;
 }
+.article, .post-article {
+  padding-bottom: 23px;
+  margin-bottom: 43px;
+}
+.post-article {
+  border-bottom: 1px solid #e7e7eb;
+}
 .article-last {
   margin-bottom: 43px;
 }
@@ -140,6 +147,10 @@
   margin-right: 43px;
   float: left;
   display: block;
+}
+p a{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -225,17 +236,46 @@
 	margin-left: 0px;
 	margin-right: 0px;
 }
-.code {
-	width: 100%;
+.gutter, .code {
+  font: 13px/1.4em Monaco,Lucida Console,monospace;
+  color: #000000;
+  background: #f1f1f1;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 1px solid #9f9f9f;
 }
-.gutter, .code ,code {
-  border: 1px solid #E3EDF3;
-  font-size: 14px;
+.gutter {
+  width: 32px;
+  max-width: 32px;
+  text-align: center;
+}
+.code{
+  overflow: auto;
+  white-space: nowrap;
+  word-wrap: break-word;
+  width: 660px;
+  display: block;
+  text-align: left;
+}
+.code .comment {
+  color: #406040;
+  font-style: italic;
+}
+tr .code .line {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+code {
+  font: 13px/1.4em Monaco,Lucida Console,monospace;
+  color: #406040;
+  background: #f1f1f1;
+  font-style: italic;
+  box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
-  overflow: auto;
-  background: #F7FAFB;
-  border-radius: 3px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 
