@@ -1,31 +1,33 @@
-## hexo-theme-atkjest
-一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏，可以点击&nbsp;[hexo-theme-atkjest](http://atkjest.me/2016/03/18/2016/hexo-theme-atkjest%E4%B8%8A%E7%BA%BF/)&nbsp;查看效果。
+# hexo-theme-atkjest
+一款优雅的Hexo主题，简约而不简单，灵感来自于知乎专栏
 
-### 关于主题
-1、知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师 <br/>
-2、百度分享 => qq空间、新浪微博、微信等 <br/>
-3、comment => 多说评论 <br/>
-4、firebase数据统计 => 网站访问量、点赞统计 <br/>
-5、Google Search站内搜索 => Google site: 站内搜索 <br/>
-6、RSS订阅 => hexo-generator-feed <br/>
-7、font awesome => 图标字体 <br/>
-8、有字库在线云字体 => 站点标题 <br/>
-9、多说社会化评论框核心脚本`embed.js`本地化 => 加载速度更快
+## 关于主题
+* 知乎专栏布局设计 => 灵感来源 && Iris => 美工设计师 <br/>
+* 百度分享 => qq空间、新浪微博、微信等 <br/>
+* comment => 多说评论 <br/>
+* firebase数据统计 => 网站访问量、点赞统计 <br/>
+* Google Search站内搜索 => Google site: 站内搜索 <br/>
+* RSS订阅 => hexo-generator-feed <br/>
+* font awesome => 图标字体 <br/>
+* 有字库在线云字体 => 站点标题 <br/>
+* 多说社会化评论框核心脚本`embed.js`本地化 => 加载速度更快
 
 ![hexo-theme-atkjest](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152434_1366x768_scrot.png)
 ![hexo-theme-bottom](http://7xot8c.com1.z0.glb.clouddn.com/2016-03-18-152950_1366x768_scrot.png)
 
-### 使用
-#### 安装
+## 使用
+
+### 安装
 `$ git clone https://github.com/atkjest/hexo-theme-atkjest.git themes/atkjest`
-#### 配置
+### 配置
 修改hexo根目录下的 _config.yml <br/>
 `theme: atkjest`
-#### 更新
+### 更新
 `cd themes/atkjest` <br/>
 `git pull`
 
-### 主题配置
+## 主题配置
+
 配置文件在主题根目录下的_config.yml
 ```bash
 author: atkjest
